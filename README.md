@@ -1,7 +1,6 @@
 # TIL
 What did I learned!✨
 
----
 ### 📂 ComputerScience
 
 ### 📂 Algorithm
