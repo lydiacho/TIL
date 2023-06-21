@@ -1,6 +1,12 @@
 # TIL
-Today I Learned...
----
+What did I learned!✨
 
-## 📂 블록체인
+---
+### 📂 ComputerScience
+
+### 📂 Algorithm
+
+### 📂 FrontEnd
+
+### 📂 Blockchain
 [코인과 토큰 기초](https://github.com/lydiacho/TIL/blob/main/Blockchain/CoinAndToken.md)
