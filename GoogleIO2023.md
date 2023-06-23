@@ -49,24 +49,24 @@ https://youtu.be/dVsiusLQy5Q
 
 ## Duet AI for Google Workspace
 
-[구글 제품군에 인공지능 적용된 사례](https://workspace.google.com/blog/product-announcements/duet-ai?hl=en)
-
 - **Gmail - Help me write**
   - 프롬프트에 내용 입력하면 맥락에 맞게 메일 작성
 - **Google Docs - Help me write**
   - 프롬프트에 내용 입력하면 본문 생성
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/31f66e79-2a83-487c-8e04-af9c745b65dc/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bb3bb04a-8b66-458b-aaf7-fc9c979edb9a/Untitled.png)
+<div>
+  <img width="450px" src="https://github.com/lydiacho/TIL/assets/81505421/dc07d441-8998-49e1-bb50-66c3d768c049"/>
+  <img width="450px" src="https://github.com/lydiacho/TIL/assets/81505421/765eee0f-55eb-4943-9ec0-c65f249ab6b6"/>
+</div>
 
 - **Google Sheets - Help me organize**
   - 프롬프트에 내용 입력하면 표 생성
-  ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d38a397b-323f-4eee-ab07-688ac2d535c0/Untitled.png)
+![image-11](https://github.com/lydiacho/TIL/assets/81505421/6c849d3a-e7f3-465f-a4f2-5b334b0ddeea)
+
 - **Google Slides - Help me visualize**
   - 프롬프트에 내용 입력하면 이미지 생성
   - **슬라이드별 발표 대본 작성해주는 기능 추가**
-  ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cee63ef1-6e4b-40d2-af7d-35220bf1dc63/Untitled.png)
+ 
+![image-12](https://github.com/lydiacho/TIL/assets/81505421/31b65741-9db2-489c-b0dc-4fad352d594f)
 
 ### Sidekick 기능
 
