@@ -6,23 +6,21 @@ React에서 `데이터 fetching`과 `캐싱 프로세스`를 간소화해주는 
 - API 요청의 로딩 및 오류 상태 관리
 - 캐싱 자동 관리
 
-Redux, Recoil 같은 라이브러리와는 다른 결이다. 그들은 **클라이언트 상태 관리 라이브러리**!
+<br/>
 
 ## Client State vs Server State
 
-|                                             | Client State                                                      | Server State                                                               |
-| ------------------------------------------- | ----------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| 위치                                        | 클라이언트에 저장된 데이터                                        | 서버나 외부 데이터 소스에 저장된 데이터                                    |
-| 접근성                                      | 클라이언트만 접근 가능                                            | 접근 권한이 있는 모든 클라이언트 접근 가능                                 |
-| 데이터 관리                                 | 클라이언트에서 관리                                               |
-| (Redux, Recoil 등 상태관리 라이브러리 사용) | 서버에서 관리                                                     |
-| (데이터베이스 사용)                         |
-| 지속성                                      | 세션 간에 필연적으로 지속되진 않음                                | 일반적으로 세션 간에 지속성 유지                                           |
-| 네트워크 요청                               | 데이터를 가져오거나 업데이트하려면 네트워크 요청이 필요할 수 있음 | 데이터 접근 또는 업데이트를 위해 네트워크 요청이 필요할 수 있음            |
-| 보안                                        | 클라이언트가 액세스할 수 있고 보안 수준이 낮음                    | 인증 및 암호화로 보호할 수 있으므로 더 안전                                |
-| 성능                                        | server state에 비해 속도 빠름                                     | client state에 비해 속도 느림                                              |
-| 확장성                                      | 클라이언트 기기 용량이 제한적이어서 확장성이 다소 떨어짐          | 전용 서버나 데이터 소스로 관리되기 때문에 용량이 커서 확장성이 비교적 높음 |
-| 예시                                        | 컴포넌트 state, Redux state, 브라우저 쿠키                        | DB 레코드, API 응답, 서버 세션 데이터                                      |
+|  | Client State | Server State |
+| --- | --- | --- |
+| 위치 | 클라이언트에 저장된 데이터 | 서버나 외부 데이터 소스에 저장된 데이터 |
+| 접근성 | 클라이언트만 접근 가능 | 접근 권한이 있는 모든 클라이언트 접근 가능 |
+| 데이터 관리 | 클라이언트에서 관리 <br/> (Redux, Recoil 등 상태관리 라이브러리 사용) | 서버에서 관리 <br/>(데이터베이스 사용) |
+| 지속성 | 세션 간에 필연적으로 지속되진 않음  | 일반적으로 세션 간에 지속성 유지 |
+| 네트워크 요청 | 데이터를 가져오거나 업데이트하려면 네트워크 요청이 필요할 수 있음 | 데이터 접근 또는 업데이트를 위해 네트워크 요청이 필요할 수 있음 |
+| 보안 | 클라이언트가 액세스할 수 있고 보안 수준이 낮음 | 인증 및 암호화로 보호할 수 있으므로 더 안전 |
+| 성능 | server state에 비해 속도 빠름 | client state에 비해 속도 느림 |
+| 확장성 | 클라이언트 기기 용량이 제한적이어서 확장성이 다소 떨어짐 | 전용 서버나 데이터 소스로 관리되기 때문에 용량이 커서 확장성이 비교적 높음 |
+| 예시 | 컴포넌트 state, Redux state, 브라우저 쿠키 | DB 레코드, API 응답, 서버 세션 데이터 |
 
 기존의 Client State 관리는
 
@@ -32,33 +30,33 @@ Redux, Recoil 같은 라이브러리와는 다른 결이다. 그들은 **클라�
 
 등의 라이브러리를 통해 관리한다.
 
-Client에서 API와 통신을 하기 위해서는
+<br/>
 
-추가적으로 useEffect, useState를 함께 쓰면서 데이터를 fetching 해왔다.
+
+Client에서 API와 통신을 하기 위해서는
+추가적으로 **useEffect**, **useState**를 함께 쓰면서 데이터를 fetching 해왔다.
 
 하지만 React Query를 사용하면 이러한 훅들의 필요성이 사라진다.
+
+<br/>
+
 
 ## React Query 주요 개념
 
 `Query`
-
-API 엔드포인트, DB 등의 원격 데이터 소스로부터 데이터 요청
-
+- API 엔드포인트, DB 등의 원격 데이터 소스로부터 데이터 요청
 - **useQuery** 훅 사용
 
 `Mutation`
-
-서버에 데이터를 추가하거나 업데이트
-
+- 서버에 데이터를 추가하거나 업데이트
 - **useMutation** 훅 사용
 
 `Query Caching`
-
-Query 결과를 메모리에 저장
-
+- Query 결과를 메모리에 저장
 `Query Invalidation`
+- 쿼리를 오래된 상태로 여겨 무효화
 
-쿼리를 오래된 상태로 여겨 무효화
+<br/>
 
 ## 1️⃣ useQuery 훅
 
@@ -66,18 +64,20 @@ Query 결과를 메모리에 저장
 
 API 엔드포인트나 DB에서 데이터를 **비동기적**으로 가져오도록 서버에 요청하는 것
 
+<br/>
+
 ### **사용법**
 
 ```jsx
 const query = useQuery( { queryKey: [ ‘key’ ],   queryFn: callback })
 ```
 
-`queryKey` 쿼리의 **고유 키**
-
+`queryKey` 
+- 쿼리의 **고유 키**
 - React Query 최신 버전부터는 **배열 표기법**을 사용해서 키 지정
 
-`queryFn` 훅 호출 시 실행되는 **Promise 반환하는 함수**
-
+`queryFn` 
+- 훅 호출 시 실행되는 **Promise 반환하는 함수**
 - 해당 callback함수에서 데이터 fetching
 
 ```jsx
@@ -104,12 +104,16 @@ const { isLoading, isError, data, error, refetch, remove } = useQuery( { queryKe
 - `refetch` 쿼리 데이터를 수동으로 refetch 하는 트리거 **메소드**
 - `remove` 캐시에서 특정 쿼리 제거하는 **메소드**
 
+<br/>
+
 ### 데이터 refetching
 
 `useQuery`는 기본적으로
 
 - **컴포넌트 최초 mount 시**에 데이터를 fetching해오고,
 - 이후의 데이터 업데이트에 대해서는 **자동 실행되지 않는다. (데이터 refetching 안해줌)**
+
+<br/>
 
 **[ useQuery 옵션 ]**
 
@@ -125,6 +129,8 @@ const { isLoading, isError, data, error, refetch, remove } = useQuery( { queryKe
 
 - 설정한 밀리초 단위로 데이터를 계속 refetching 해옴
 
+<br/>
+
 ## 2️⃣ useMutation 훅
 
 API 엔드포인트나 DB에 데이터를 새로 생성, 수정, 삭제
@@ -135,8 +141,8 @@ API 엔드포인트나 DB에 데이터를 새로 생성, 수정, 삭제
 const mutation = useMutation({ mutationFn: mutationFunction });
 ```
 
-`mutationFn` 필수 옵션.
-
+`mutationFn` 
+- 필수 옵션.
 - 실행하고자 하는 함수를 **반환**하는 함수
 - 예시
   ```jsx
@@ -154,6 +160,8 @@ const mutation = useMutation({ mutationFn: mutationFunction });
     })
   ```
 
+<br/>
+
 `반환값` 뮤테이션 실행 결과와 관련된 정보를 담은 **객체**
 
 대표적인 **프로퍼티**
@@ -167,6 +175,8 @@ const mutation = useMutation({ mutationFn: mutationFunction });
 - `onSuccess` 뮤테이션 성공시 호출할 콜백함수
 - `onError` 뮤테이션 실패시 호출할 콜백함수
 
+<br/>
+
 ## 3️⃣ Query Caching
 
 원격 서버와 통신하는데에 걸리는 시간을 단축하고자,
@@ -176,6 +186,8 @@ const mutation = useMutation({ mutationFn: mutationFunction });
 useQuery 훅 사용 시, 지정했던 **`고유 키`** 밑에 **반환된 데이터가 캐싱**된다.
 
 기본적으로는 캐시 데이터는 **오래된(stale) 상태**로 기록된다.
+
+<br/>
 
 **[ Query Caching과 관련된 useQuery 옵션 ]**
 
@@ -188,9 +200,12 @@ const query = useQuery({
   })
 ```
 
-`staleTime` xx밀리초 후에 데이터는 **stale 상태**로 처리된다.
+`staleTime` 
+- xx밀리초 후에 데이터는 **stale 상태**로 처리된다.
+`cacheTime` 
+- xx밀리초 후에 캐시 데이터는 **가비지 컬렉션**으로 간다. (버려짐)
 
-`cacheTime` xx밀리초 후에 캐시 데이터는 **가비지 컬렉션**으로 간다. (버려짐)
+<br/>
 
 ## 4️⃣ Query Invalidation
 
@@ -201,6 +216,8 @@ const query = useQuery({
 > React Query의 `QueryClient` **객체**의 `invalidateQueries` **메소드** 활용
 
 - **모든 쿼리**, 혹은 고유 키를 통해 **특정 쿼리**를 stale 상태로 처리해주는 역할
+
+<br/>
 
 ### 사용법
 
@@ -220,6 +237,9 @@ queryClient.invalidateQueries();
 queryClient.invalidateQueries({ queryKey: ["users"] });
 ```
 
+<br/>
+
+---
 ## 📌 요약
 
 - React 훅을 사용해서 데이터를 간편하게 Fetch/Update
