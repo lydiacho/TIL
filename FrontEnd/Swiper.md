@@ -1,4 +1,5 @@
 ## For what? ⇒ 자동 슬라이드 (Carousel)
+**[ 기능 명세 ]**
 
 - 자동으로 슬라이드
 - 슬라이드 넘어가는 속도, 머무르는 속도 커스텀
@@ -31,8 +32,8 @@
       - `modules` : 추가 기능에 필요한 모듈
       - `pagination` : indicator 클릭을 통한 페이지 이동 가능 여부
       - `slidesPerView` : 한 슬라이드 당 보여줄 요소 개수
-
-      > 그 외 무수히 많은 옵션은 **공식 문서** 참고 ! https://swiperjs.com/react
+      <br/>
+     > 그 외 무수히 많은 옵션은 **공식 문서** 참고 ! https://swiperjs.com/react
 
    2. 내부 요소 : `SwiperSlide`
 
@@ -58,6 +59,7 @@
      </Swiper>
    </div>
    ```
+   <br/>
 
    ### ✔️ Pagination
 
@@ -71,8 +73,8 @@
 
    #### **Pagination Bullet의 상단 class명 : `swiper-pagination`**
 
-   > ⚠️ **주의!**
-   > 그냥 .swiper-pagination에 css를 주면 아무런 적용이 되지 않을 것이다.
+   > ⚠️ **주의!** <br/>
+   > 그냥 .swiper-pagination에 css를 주면 아무런 적용이 되지 않을 것이다. <br/>
    > 그럴 땐, 현재 나의 css 파일이 라이브러리의 css 파일을 덮어쓸 수 있도록 import를 배치하자.
    >
    > ```
@@ -82,7 +84,7 @@
    > import "./App.css";
    > ```
    >
-   > - 이 외에 className보다 우선순위인 id를 지정해서 스타일을 주는 등 다양한 해결책이 있다.
+   > - 이 외에 className보다 우선순위인 id를 지정해서 스타일을 주는 등 다양한 해결책이 있다. <br/>
    >   https://think0wise.tistory.com/24 → 참고!
 
    #### 각 Bullet의 class명 : `swiper-pagination-bullet`
@@ -96,8 +98,9 @@
      background-color: pink;
    }
    ```
+    <img width="590" alt="스크린샷 2023-07-01 오후 8 24 51" src="https://github.com/lydiacho/TIL/assets/81505421/7dc901d2-a215-4ced-9620-e7912b51212e">
 
-   ![스크린샷 2023-07-01 오후 8.24.51.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/533ddf60-645f-4383-aad2-e8d8ee8b2312/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2023-07-01_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.24.51.png)
+
 
 ### ✔️ Autoplay
 
@@ -121,4 +124,8 @@ autoplay={{
 
 ## 구현 결과물
 
-![ezgif.com-video-to-gif-17.gif](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a4ba4039-e720-4ecb-940f-16917c25813e/ezgif.com-video-to-gif-17.gif)
+
+https://github.com/lydiacho/TIL/assets/81505421/bff1de74-544f-4b10-89c8-0ca17f094bc5
+
+
+
