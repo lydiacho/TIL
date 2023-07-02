@@ -1,9 +1,10 @@
 ## For what? ⇒ 주소지 검색을 위한 API
+- 버튼 클릭 시 모달 켜짐
+- 주소 선택 시 모달 자동 닫힘
+- 주소 선택 시 우편번호, 기본주소가 input에 작성됨
+- input은 언제나 disabled (사용자가 임의 편집 불가)
 
-<aside>
-💡 `react-daum-postcode` 라이브러리
-
-</aside>
+> **💡 sol) `react-daum-postcode` 라이브러리**
 
 ### ✔️ 사용방법
 
@@ -50,7 +51,8 @@
    - 핸들러의 인수로 data를 받고 console.log를 찍어보자.
    - 최종 주소 선택 시 아래처럼 data가 찍히고 모달창은 **자동으로** 닫힌다
 
-   ![스크린샷 2023-07-01 오전 2.52.13.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/736a91ab-9ce1-4681-8498-a5c0aee477eb/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2023-07-01_%EC%98%A4%EC%A0%84_2.52.13.png)
+   <img width="543" alt="스크린샷 2023-07-01 오전 2 52 13" src="https://github.com/lydiacho/TIL/assets/81505421/85dfdb5f-2564-4ce3-91cf-c8e1540dcbb9">
+
 
    여기서 우리가 필요한 값은 주소인 `address`,와 우편번호 `zonecode` !
 
@@ -110,3 +112,11 @@ function App() {
 
 export default App;
 ```
+
+## 구현 결과물
+
+
+
+https://github.com/lydiacho/TIL/assets/81505421/1042cf68-c29b-4ac5-8a4a-2b37154b6084
+
+
