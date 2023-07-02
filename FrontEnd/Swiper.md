@@ -128,4 +128,8 @@ autoplay={{
 https://github.com/lydiacho/TIL/assets/81505421/bff1de74-544f-4b10-89c8-0ca17f094bc5
 
 
+### 참고
+옵션이 정말 다양하기 때문에 (navigation 등) [공식문서](https://swiperjs.com/react) 꼭꼭 참고하기
+ 
+
 
