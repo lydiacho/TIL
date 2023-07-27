@@ -27,3 +27,4 @@ What did I learned!✨
 
 ### 📂 Blockchain
 [코인과 토큰 기초](https://github.com/lydiacho/TIL/blob/main/Blockchain/CoinAndToken.md)
+[ERC-6551:Token Bound Accounts](https://github.com/lydiacho/TIL/blob/main/Blockchain/ERC6551.md)
