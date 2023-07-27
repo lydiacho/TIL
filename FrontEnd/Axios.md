@@ -8,7 +8,7 @@
 
 - axios와 fetch의 차이를 알아두자!
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7bc9d750-46f2-4c86-a264-d7613afa2e18/Untitled.png)
+![Untitled (3)](https://github.com/lydiacho/TIL/assets/81505421/7fc58fe1-c0e4-4e39-8815-c03ebc586fc9)
 
 ## Axios의 메소드 종류
 
