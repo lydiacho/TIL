@@ -2,7 +2,8 @@
 
 # Vite 알아보기
 
-![스크린샷 2023-09-02 오전 2.04.25.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d40a623-da7d-44e1-9004-b5b5a8861918/46d14608-56de-4fec-a7b8-0acdf2e77957/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2023-09-02_%EC%98%A4%EC%A0%84_2.04.25.png)
+![%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202023-09-02%20%EC%98%A4%EC%A0%84%202 04 25](https://github.com/lydiacho/TIL/assets/81505421/bb984c40-2c83-4659-b6f8-58b9b4c5c469)
+
 
 Vite(비트)는 프론트엔드 개발을 위한 빌드 도구이다.
 
@@ -34,7 +35,8 @@ Vite가 처음 등장할 때 `리액트가 10배 더 빨라집니다` 라는 문
 
 아직까지도 리액트 시장에서 웹팩의 영향력이 더 우세하다는 것은 틀림 없다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1d40a623-da7d-44e1-9004-b5b5a8861918/110edf4c-cca0-4ce4-b4ee-f22496ce7df0/Untitled.png)
+![Untitled-16](https://github.com/lydiacho/TIL/assets/81505421/51521047-0758-4baa-ab61-214314b4b4ea)
+
 
 Vite의 특징은 다음과 같다.
 
@@ -49,7 +51,11 @@ Vite의 특징은 다음과 같다.
 - 순차적으로 프로젝트명, 프레임워크, variant를 선택한다
   - vite가 지원하는 템플릿 : vanilla, vue, react, preact, lit, svelte
 
+<br/>
+
 ---
+
+<br/>
 
 ## ▶️ Webpack?
 
