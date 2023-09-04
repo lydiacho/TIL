@@ -4,6 +4,9 @@ What did I learned!✨
 ### 🗂️ FrontEnd
 - #### 📂 Project Setting
   - [1. Vite](https://github.com/lydiacho/TIL/blob/main/FrontEnd/Vite.md)
+  - [2. ESLint & Prettier](https://github.com/lydiacho/TIL/blob/main/FrontEnd/ESLintPrettier.md)
+  - [3. Directory Structure & Alias Paths](https://github.com/lydiacho/TIL/blob/main/FrontEnd/DirectoryAlias.md)
+
 
 - #### 📂 React
   - [리액트 상태관리](https://github.com/lydiacho/TIL/blob/main/FrontEnd/ReactState.md)
