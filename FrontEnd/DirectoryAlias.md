@@ -37,6 +37,8 @@
 - 페이지 디렉토리가 프로젝트 빌드 도구에 따라 필요할 수도 있고, 필요 없을 수도 있다
 - 각 route 마다 여러 컴포넌트들을 합친 **구조**를 정의하는 상위 컴포넌트가 존재할 경우, `src/pages/` 디렉토리를 사용
 
+<br/>
+
 ## 절대경로 설정 (alias)
 
 절대경로에 별칭을 만들어 붙일 수 있다.
@@ -59,6 +61,8 @@ import { sortCategories } from "@helpers/category.js";
     - ../ ../ ../…. 얼마나 여러번 상위 디렉토리를 타고 올라가야 하는지 고려할 필요가 없어진다
   - 파일의 경로를 이동하더라도, 모든 import문을 수정할 필요가 없어진다.
   - 어떤 컴포넌트/파일을 참조하는 것인지 명시적으로 확인 가능하다.
+
+<br/>
 
 **➡️ JavaScript) vite.config.js 파일에서 세팅**
 
@@ -89,6 +93,8 @@ export default defineConfig({
 });
 ```
 
+<br/>
+
 **➡️ TypeScript) tsconfig.json & vite.config.ts 파일에서 세팅**
 
 1. **tsconfig.json** 파일에서 `compilerOptions` 내부에
@@ -112,7 +118,7 @@ export default defineConfig({
   },
 ```
 
-1. **tsconfig에서 추가한 path를 vite에 등록**
+2. **tsconfig에서 추가한 path를 vite에 등록**
 
 2-1. JS 경우와 같이 vite.config.js - resolve - alias 를 세팅하여 설정할 수 있다.
 
