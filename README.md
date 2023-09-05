@@ -6,6 +6,7 @@ What did I learned!✨
   - [1. Vite](https://github.com/lydiacho/TIL/blob/main/FrontEnd/Vite.md)
   - [2. ESLint & Prettier](https://github.com/lydiacho/TIL/blob/main/FrontEnd/ESLintPrettier.md)
   - [3. Directory Structure & Alias Paths](https://github.com/lydiacho/TIL/blob/main/FrontEnd/DirectoryAlias.md)
+  - [4. Router](https://github.com/lydiacho/TIL/blob/main/FrontEnd/RouterSetting.md)
 
 
 - #### 📂 React
