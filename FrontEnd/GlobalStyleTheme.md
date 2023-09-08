@@ -7,6 +7,8 @@
 
 Styled-Components를 쓰지 않는 일반 css에서는 `reset.css` 파일로 이 역할을 해주었다.
 
+<br/>
+
 **▶️ 사용법**
 
 - **styled-components** 라이브러리 설치
@@ -17,11 +19,12 @@ Styled-Components를 쓰지 않는 일반 css에서는 `reset.css` 파일로 이
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-	// 내용작성
+  // 내용작성
 `;
 ```
 
 - App.tsx에서 생성한 GlobalStyle 파일을 import 해준다
+
 
 ```jsx
 import GlobalStyle from "./styles/GlobalStyle";
@@ -36,11 +39,17 @@ import GlobalStyle from "./styles/GlobalStyle";
 </>
 ```
 
+
 그럼 프로젝트의 전역에 해당 스타일이 적용된다!
+
+<br/>
+
 
 **▶️ 전역 스타일링 예시 종류**
 
 TBD
+
+<br/>
 
 ---
 
@@ -53,6 +62,8 @@ TBD
 주로 자주 사용하는 색상과 폰트에 사용된다.
 
 (디자인 측에서 ‘디자인 시스템’을 지정해주면 초기 세팅 때 이를 참고하여 theme.ts 파일을 작성해주면 된다)
+
+<br/>
 
 **▶️ 사용법**
 
@@ -90,6 +101,8 @@ import theme from "./styles/theme";
   <Router />
 </ThemeProvider>
 ```
+
+<br/>
 
 **▶️ ThemeProvider**
 
