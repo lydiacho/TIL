@@ -8,6 +8,7 @@ What did I learned!✨
   - [3. Directory Structure & Alias Paths](https://github.com/lydiacho/TIL/blob/main/FrontEnd/DirectoryAlias.md)
   - [4. Router](https://github.com/lydiacho/TIL/blob/main/FrontEnd/RouterSetting.md)
   - [5. GlobalStyle & Theme](https://github.com/lydiacho/TIL/blob/main/FrontEnd/GlobalStyleTheme.md)
+  - [6. Axios](https://github.com/lydiacho/TIL/blob/main/FrontEnd/Axios2.md)
 
 
 - #### 📂 React
