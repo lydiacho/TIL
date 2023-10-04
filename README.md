@@ -30,6 +30,7 @@ What did I learned!✨
   - [Swiper](https://github.com/lydiacho/TIL/blob/main/FrontEnd/Swiper.md)
 
   - [Axios](https://github.com/lydiacho/TIL/blob/main/FrontEnd/Axios.md)
+  - [React Intersection Observer](https://github.com/lydiacho/TIL/blob/main/FrontEnd/ReactIntersectionObserver.md)
 
 
 ### 🗂️ ComputerScience
